@@ -6,12 +6,9 @@ import org.apache.wicket.model.IModel;
 
 
 /**
- * <h2>{@link Tab}<br>
- * <sub>[in short] (TODO).</sub></h2>
+ * <h2>{@link Tab}<br> <sub>[in short] (TODO).</sub></h2>
  *
- * <p>
- * <i>05 02, 2010</i>
- * </p>
+ * <p> <i>05 02, 2010</i> </p>
  *
  * @author lhunath
  */

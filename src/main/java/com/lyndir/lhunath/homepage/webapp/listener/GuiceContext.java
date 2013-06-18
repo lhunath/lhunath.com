@@ -21,7 +21,7 @@ import com.google.inject.*;
 import com.google.inject.servlet.GuiceServletContextListener;
 import com.google.inject.servlet.ServletModule;
 import com.lyndir.lhunath.homepage.webapp.HomepageWebApplication;
-import com.lyndir.lhunath.lib.system.logging.Logger;
+import com.lyndir.lhunath.opal.system.logging.Logger;
 import javax.servlet.ServletContext;
 import org.apache.wicket.Application;
 import org.apache.wicket.protocol.http.ContextParamWebApplicationFactory;
@@ -30,12 +30,9 @@ import org.apache.wicket.protocol.http.WicketFilter;
 
 
 /**
- * <h2>{@link GuiceContext}<br>
- * <sub>[in short] (TODO).</sub></h2>
+ * <h2>{@link GuiceContext}<br> <sub>[in short] (TODO).</sub></h2>
  *
- * <p>
- * <i>Jan 11, 2010</i>
- * </p>
+ * <p> <i>Jan 11, 2010</i> </p>
  *
  * @author lhunath
  */

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -9,7 +8,7 @@
     <parent>
         <groupId>com.lyndir.lhunath</groupId>
         <artifactId>lyndir</artifactId>
-        <version>SNAPSHOT</version>
+        <version>GIT-SNAPSHOT</version>
     </parent>
 
     <groupId>com.lyndir.lhunath.homepage</groupId>
@@ -119,11 +118,11 @@
     <!-- DEPENDENCY MANAGEMENT -->
     <dependencies>
 
-        <!-- JLibs -->
+        <!-- Opal -->
         <dependency>
-            <groupId>com.lyndir.lhunath.jlibs</groupId>
-            <artifactId>wayward</artifactId>
-            <version>SNAPSHOT</version>
+            <groupId>com.lyndir.lhunath.opal</groupId>
+            <artifactId>opal-wicket</artifactId>
+            <version>GIT-SNAPSHOT</version>
         </dependency>
 
         <!-- Web -->
@@ -138,12 +137,6 @@
         <dependency>
             <groupId>com.google.inject.extensions</groupId>
             <artifactId>guice-servlet</artifactId>
-        </dependency>
-
-        <!-- Utilities -->
-        <dependency>
-            <groupId>com.google.collections</groupId>
-            <artifactId>google-collections</artifactId>
         </dependency>
 
         <!-- Logging -->

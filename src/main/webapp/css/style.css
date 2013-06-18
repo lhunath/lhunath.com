@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
     color:              #DDD;
 
     padding:            0.5em 1em 0;
+    clear:              both;
 
     text-shadow:        #BBB 0 1px 1px;
     font-family:        Baskerville, "Palatino Linotype", Palatino, Cambria, Times, "Times New Roman", serif;
@@ -290,6 +291,9 @@ li {
     -webkit-box-shadow: 0 1px 4px black;
     -moz-box-shadow:    0 1px 4px black;
     box-shadow:         0 1px 4px black;
+}
+#ribbon div {
+    white-space:        nowrap;
 }
 a.pops {
     position: relative;
