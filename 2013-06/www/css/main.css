@@ -98,6 +98,7 @@ section {
     border-bottom: 1px solid #666;
     box-shadow: 0 1px 5px #666;
     position: relative;
+    overflow: hidden;
     height: 90%;
     margin: 0 0 10%;
 
