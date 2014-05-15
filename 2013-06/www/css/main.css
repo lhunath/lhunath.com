@@ -93,7 +93,8 @@ section {
     background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.8) 100%), url("../img/background.jpg");
     background: radial-gradient(60% 70% at 50% 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 100%), url("../img/background.jpg");
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=1 );
-    background-size: cover;
+    background-position: center center !important;
+    background-size: cover, cover !important;
     border-top: 1px solid #666;
     border-bottom: 1px solid #666;
     box-shadow: 0 1px 5px #666;

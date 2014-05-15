@@ -6,6 +6,9 @@
     body {
         font-size: 1.0em;
     }
+    .content {
+        transform: none;
+    }
     .content h1 {
         font-size: 4em;
     }
@@ -22,12 +25,31 @@
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-    body {
+    header,
+    section {
+        background: url("../img/background.jpg");
+    }
+    section#ideas {
+        background: url("../img/1.jpg");
+    }
+    section#creations {
+        background: url("../img/2.jpg");
+    }
+    section#contact {
+        background: url("../img/3.jpg");
     }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Small Tablets */
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+    header,
+    section {
+        background: url("../img/background.jpg");
+    }
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
@@ -36,10 +58,11 @@
     }
     header,
     section {
+        background: url("../img/background.jpg");
         height: 100%;
     }
     .content h1 {
-        font-size: 2.5em;
+        font-size: 2.3em;
     }
     .content h2 {
         font-size: 1.6em;
