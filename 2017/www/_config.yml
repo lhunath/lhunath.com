@@ -1,0 +1,16 @@
+title: Just About Me
+author: Maarten Billemont
+email: lhunath@lyndir.com
+description: >
+  Maarten Billemont is an ideological software developer with an appreciation for beautiful things.
+baseurl: ""
+url: "http://lhunath.com"
+twitter_username: lhunath
+github_username:  lhunath
+
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

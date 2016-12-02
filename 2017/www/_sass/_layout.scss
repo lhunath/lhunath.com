@@ -1,0 +1,13 @@
+body > header {
+    background:             $brand-color;
+
+    padding:                2em;
+    height:                 400px;
+    box-sizing:             border-box;
+
+    text-align:             center;
+
+    a {
+        color:              darken($brand-color, 15%);
+    }
+}
