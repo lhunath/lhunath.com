@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -e
+
+cd "${BASH_SOURCE[0]%/*}"
+s3cmd sync --skip-existing --continue-put --stats --follow-symlinks --exclude '.git/**' --human-readable-sizes --no-preserve --acl-public --reduced-redundancy "${@:-.}" s3://lhunath.com/
+rsync -rvPLc --no-group "${@:-.}" satura.lyndir.com:/usr/local/www/lhunath.com/htdocs-secure/

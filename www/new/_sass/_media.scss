@@ -1,0 +1,54 @@
+@media (max-width: 900px) {
+    body {
+        font-size: 1.1em;
+
+        padding: 0 8ex;
+    }
+    header.page {
+        margin: 0 -8ex;
+
+        h1 {
+            font-size: 5rem;
+        }
+        h2 {
+            font-size: 3rem;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+        h4 {
+            font-size: 1rem;
+        }
+    }
+    footer.site {
+        margin: 4rem -8ex 0;
+        padding: 1em 8ex;
+    }
+}
+@media (max-width: 520px) {
+    body {
+        font-size: 1em;
+
+        padding: 0 2ex;
+    }
+    header.page {
+        margin: 0 -2ex;
+
+        h1 {
+            font-size: 5rem;
+        }
+        h2 {
+            font-size: 3rem;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+        h4 {
+            font-size: 1rem;
+        }
+    }
+    footer.site {
+        margin: 4rem -2ex 0;
+        padding: 1em 2ex;
+    }
+}

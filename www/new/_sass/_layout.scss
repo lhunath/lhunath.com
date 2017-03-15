@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:100|Fredericka+the+Great|Orbitron:700|Signika:700|Source+Sans+Pro');
+
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+
+    padding: 0 13ex;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Fredericka the Great', cursive;
+}
+h2 {
+    font-size: 2em;
+    font-family: 'Signika', sans-serif;
+    text-align: right;
+    border-bottom: 1px solid;
+    padding: 0 1ex;
+    margin: 4rem 0 1rem;
+}
+h3 {
+    font-size: 1.5em;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+}
+h4 {
+    font-family: 'Advent Pro', sans-serif;
+    padding: 0 1em;
+
+    &::before {
+        content: "~ ";
+    }
+}
+
+a:link, a:visited {
+    color: inherit;
+    text-decoration: underline;
+}
+a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+header.page {
+    height: 90%;
+    margin: 0 -13ex;
+    background-image: url('/img/background.jpg');
+    background-size: cover;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* don't like this - but without, the content wraps on mobile devices */
+
+    /* Vertically center content */
+    &::before, &>div.middle {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+    }
+    &::before {
+        content: "";
+        height: 100%;
+        width: 0;
+    }
+    
+    /* Text styles */
+    h1, h2, h3, h4 {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+    h2 {
+        font-size: 5rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+}
+
+footer.site {
+    display: flex;
+    margin: 4rem -13ex 0;
+    padding: 1em 13ex;
+
+    background: #EEE;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    &>* {
+        flex-grow: 1;
+        font-size: 0.8rem;
+    }
+}
+
+ul.gallery {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 1em;
+    list-style: none;
+    flex-wrap: wrap;
+
+    li {
+        height: 200px;
+        border-bottom: 1px solid;
+        padding: 1px 0 1px 1ex;
+
+        img {
+            height: inherit;
+            border-radius: 4px;
+        }
+        &::after {
+            display: inline-block;
+            content: "";
+            height: 2em;
+            width: 1ex;
+            border-right: 1px solid;
+            vertical-align: middle;
+        }
+    }
+}
