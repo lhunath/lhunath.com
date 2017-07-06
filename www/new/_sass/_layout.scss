@@ -7,7 +7,9 @@ html, body {
 }
 body {
     background: #FEFCF5;
+    background: white;
     color: #1E0C05;
+    color: black;
 
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2em;
@@ -63,14 +65,13 @@ a {
 header.page {
     height: 90%;
     margin: 0 -13ex;
-    background-image: url('/img/background.jpg');
-    background: url('/img/background-us.jpg') center center;
+    background: url('/img/background.jpg') center center;
     background-size: cover;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     white-space: nowrap; /* don't like this - but without, the content wraps on mobile devices */
 
-    color: #FEFCF5;
+    color: black;
 
     /* Vertically center content */
     &::before, &>div.content {
