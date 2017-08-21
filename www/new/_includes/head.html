@@ -10,4 +10,7 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   <script src="https://use.fontawesome.com/0f8d3c04af.js"></script>
+  <script>
+    document.getElementsByTagName('html')[0].setAttribute('lang', window.navigator.userLanguage || window.navigator.languages[0] || window.navigator.language)
+  </script>
 </head>
