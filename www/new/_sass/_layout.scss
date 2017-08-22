@@ -87,12 +87,16 @@ header.page {
         background-size: cover;
         opacity: 0.3;
     }
-    html[lang='pt-BR'] &>.logo {
+    &>.logo {
+        display: none;
         position: absolute;
         top: 1em;
         right: 1em;
         width: 8em;
         opacity: 0.3;
+    }
+    html[lang='pt-BR'] &>.logo {
+        display: block;
     }
 
     /* Vertically center content */

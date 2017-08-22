@@ -11,6 +11,20 @@
 
   <script src="https://use.fontawesome.com/0f8d3c04af.js"></script>
   <script>
-    document.getElementsByTagName('html')[0].setAttribute('lang', window.navigator.userLanguage || window.navigator.languages[0] || window.navigator.language)
+    var urlParams;
+    (window.onpopstate = function () {
+        var match,
+            pl     = /\+/g,  // Regex for replacing addition symbol with a space
+            search = /([^&=]+)=?([^&]*)/g,
+            decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+            query  = window.location.search.substring(1);
+
+        urlParams = {};
+        while (match = search.exec(query))
+           urlParams[decode(match[1])] = decode(match[2]);
+
+        document.getElementsByTagName('html')[0].setAttribute('lang', urlParams['lang'] ||
+            window.navigator.userLanguage || window.navigator.languages[0] || window.navigator.language)
+    })();
   </script>
 </head>
