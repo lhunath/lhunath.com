@@ -82,11 +82,6 @@ header.page {
         background: url('/img/maarten.jpg') center bottom;
         background-size: cover;
     }
-    html[lang='pt-BR'] &::before {
-        background: url('/img/elektra.jpg') center bottom;
-        background-size: cover;
-        opacity: 0.4;
-    }
     &>.click {
         display: block;
         position: absolute;
@@ -193,14 +188,4 @@ ul.gallery {
             vertical-align: middle;
         }
     }
-}
-
-.ifBr {
-    display: none !important;
-}
-html[lang='pt-BR'] .ifBr {
-    display: block !important;
-}
-html[lang='pt-BR'] .ifNotBr {
-    display: none !important;
 }
